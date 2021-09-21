@@ -5,8 +5,8 @@ import java.io.*;
 
 public class Var7 {
     public static void main(String[] args) throws IOException {
-        File f1 = new File("D:\\файлы 1\\numbers.txt");
-        File f2 = new File("D:\\файлы 1\\result.txt");
+        File f1 = new File("D:\\numbers.txt");
+        File f2 = new File("D:\\result.txt");
         DataOutputStream wr = null;
         DataInputStream rd = null;
         DataOutputStream wr2 = null;
@@ -57,7 +57,9 @@ public class Var7 {
                     max = n;
             }
         } catch (EOFException eofException) {
-            System.out.println("\nНаибольшее число => " + max);
+            if (max != 0) {
+                System.out.println("\nНаибольшее число => " + max);
+            }
         } catch (IOException ie) {
 
         }
