@@ -41,8 +41,10 @@ public class Var7 {
             System.out.println("Не создан файл");
         }
         finally {
+            assert wr != null;
             wr.flush();
             wr.close();
+            assert wr2 != null;
             wr2.flush();
             wr2.close();
             rd.close();
@@ -62,6 +64,10 @@ public class Var7 {
             }
         } catch (IOException ie) {
 
+        }
+        finally{
+            assert rd2 != null;
+            rd2.close();
         }
 
     }
