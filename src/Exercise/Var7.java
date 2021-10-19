@@ -36,7 +36,7 @@ public class Var7 {
                 }
             }
         } catch (EOFException eofException) {
-
+            System.out.println("Ошибка");
         } catch(IOException ioException) {
             System.out.println("Не создан файл");
         }
