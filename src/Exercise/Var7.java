@@ -63,7 +63,7 @@ public class Var7 {
                 System.out.println("\nНаибольшее число => " + max);
             }
         } catch (IOException ie) {
-
+            System.out.println("Ошибка");
         }
         finally{
             assert rd2 != null;
